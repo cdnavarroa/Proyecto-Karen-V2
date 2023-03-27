@@ -57,7 +57,7 @@
                                         <td>  Aprendiz  </td>
                                         <td> {user.celular_aprendiz}</td>
                                         <td> {user.correo_aprendiz}</td>
-                                        <td> <Link to={`/edit/${user.id}`} className='btn btn-info'><i className="fas fa-edit">Editar</i></Link> </td>
+                                        <td> <Link to={`/edit/${user.id}`} ><i class="bi bi-trash3-fill">Editar</i></Link> </td>
                                         <td> <button onClick={() => DeleteUser(user.id)} className='btn btn-danger'><i className="fas fa-trash-alt"></i>Eliminar</button>
                                         </td>
                                     </tr>
