@@ -1,1 +1,3 @@
 /.hintrc
+# /node/node_modules
+# /reactfront/node_modules
