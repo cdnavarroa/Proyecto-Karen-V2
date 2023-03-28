@@ -28,6 +28,21 @@ export const getUser= async (req, res)=>{
     }
 }
 
+//crea un usuario
+
+export const createUser = async (req, res) => {
+
+    try {
+        await UsersModel.create(req.body)
+        res.json({
+            "message":"¡Registro de Usuario Correcto!"
+        })
+    } catch (error) {
+        
+        res.json({ message: error.message})
+    }
+}
+
 
 //Actualizar un registro
 
